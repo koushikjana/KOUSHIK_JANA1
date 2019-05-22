@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head><title>Koushik Jana</title>
+<script>
+function show(){
+var v,n,y;
+fact=1;
+
+n=Number(document.getElementById("num").value);
+{
+
+y=(((300)/(n))/4)*39;
+}  
+document.getElementById("answer").value= y;
+}
+
+function show1(){
+var v,n,x;
+fact=1;
+
+n=Number(document.getElementById("num1").value);
+{
+
+x=((((300)/(n))*3)/4)*39;
+}  
+document.getElementById("answer1").value= x;
+}
+
+
+function show2(){
+var v,n,x;
+fact=1;
+
+n=Number(document.getElementById("num2").value);
+{
+
+x=((((300)/(n))*5)/8)*39;
+}  
+document.getElementById("answer2").value= x;
+}
+
+</script>
+</head>
+<body><center>
+	<h1>For 0 dB :  λ/4 </h1>
+Enter Frequecny (MHz): <input id="num">
+
+<button onclick="show()">Calculate Antenna Height</button>
+<input id="answer">:Inch<br><br>
+<h1>For 3 dB :  3λ/4</h1>
+Enter Frequecny (MHz): <input id="num1">
+<button onclick="show1()">Calculate Antenna Height</button>
+<input id="answer1">:Inch<br><br>
+
+<h1>For 6 dB : 5λ/8 </h1>
+Enter Frequecny (MHz): <input id="num2">
+<button onclick="show2()">Calculate Antenna Height</button>
+<input id="answer2">:Inch
+</center>
+</body>
+</html>
